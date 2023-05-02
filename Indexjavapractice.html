@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables en JavaScript</title>
+</head>
+
+<body>
+    <h1>Curso JavaScript</h1>
+    <h2>Sintaxis Basica</h2>
+    <ul>
+        <li>Variables</li>
+        <li>Las contantes</li>
+        <li>Operadores</li>
+    </ul>
+
+    <script>
+        // variable global
+        console.log("Datos personales");
+        var nombre = "Brayan Cortes";
+        console.log(nombre);
+        var edad = "Tengo 23 años";
+        console.log(edad);
+        // vvariable local
+        let segundonombre = "Estivens";
+        console.log(segundonombre);
+        {
+            saludo = "Hola!!";
+            console.log(saludo);
+            nombre = "Estivens Cortes";
+            console.log(nombre, edad);
+        }
+        let name = "Pepito perez";
+        console.log("La variable saludo despues del bloque es:");
+        consile.log(saludo);
+        console.log("La variable nombre despues del bloque es:");
+        console.log(nombre);
+
+        // tipos de datos
+        numeros;
+
+        let num = 1546;
+        let num2 = 25.4;
+
+        // caracteres y cadenas de texto
+        let cadena = "Esta es mi primer cadena";
+        let caracter = "a";
+
+        // logico
+        let verdadero = true;
+        let falso = false;
+
+        // constantes
+        const PI = 3.1416;
+        console.log(PI);
+        // operadores
+        // operadores logico
+        // suma
+        let suma = num + num2;
+        console.log("El valor de la suma es ", suma);
+        // multiplicar
+        let multi = num * num2;
+        console.log("El valor de la miltiplicacion ", multi);
+        // división
+        let divi = num / num2;
+        console.log("El valor de la división es ", divi);
+        // Modulo
+        let modulo = num % 2;
+        console.log("El resultado del numero es ", modulo);
+        // resta
+        let resta = num - num2;
+        console.log("El resultado de la resta ", resta);
+        // operadores de incremento
+        let i = 0;
+        // el valor de i incrementele 1 unidad
+        i++;
+        console.log(i);
+        let j = 54;
+        j--;
+        console.log(j);
+        // operadores logicos
+        // verdadero AND Falso=Falso
+        // AND: Solo devuelve verdadero cuando las dos son vverdadero
+
+        let resultadobooleano;
+
+        resultadobooleano = verdadero && verdadero;
+        console.log(resultadobooleano);
+        resultadobooleano = verdadero && falso;
+        console.log(resultadobooleano);
+        // OR ||: Solo devueve falso cuando las dos son falsas
+
+        resultadobooleano = falso || falso;
+        console.log(resultadobooleano);
+        resultadobooleano = verdadero || falso;
+        console.log(resultadobooleano);
+
+        // negacion != invierte la negación del booleano
+
+        resultadobooleano = !verdadero;
+        console.log(resultadobooleano);
+
+        // operadores de comparacion
+        // Mayor >
+        // num=1546
+        // num2=25
+        resultadobooleano = num > num2;
+        console.log(resultadobooleano);
+        // Menor <
+        resultadobooleano = num < num2;
+        console.log(resultadobooleano);
+        resultado = 25;
+        // Mayor o igual que
+        resultadobooleano = num >= num2;
+        console.log(resultadobooleano);
+        // Menor o igual
+        resultadobooleano = num <= num2;
+        console.log(resultadobooleano);
+        // comparación
+        // Se puede comparar SOLO el valor con ==
+        // Se puede comparar el valor Y el tipo de dato ==
+        num2 = "25";
+        resultadobooleano = num == num2;
+        console.log(resultadobooleano);
+
+    </script>
+</body>
+
+</html>
